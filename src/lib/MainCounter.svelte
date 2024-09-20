@@ -3,7 +3,7 @@
     import {PlayerType} from '../DirectionPalette';
     import { mainCounter, numbersWin, isStopMainCounter, defaultMainCount, isPausedMainCounter } from '../Store';
     
-    let intervalId: number; // Guardaremos aquí el identificador del intervalo
+    var intervalId: NodeJS.Timeout; // Guardaremos aquí el identificador del intervalo
     
     function iniciarContador() {
         intervalId = setInterval(() => {

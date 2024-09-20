@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Sound } from "svelte-sound";
-    import partySound from "../assets/sounds/partyTap.mp3";
+    import partySound from "@public/sounds/partyTap.mp3";
     import { Confetti } from "svelte-confetti"
     import { michiCounter, robotCounter, succesCases, numbersWin, isStopMainCounter } from '../Store';
     import Cajita from "./Cajita.svelte";

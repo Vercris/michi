@@ -3,7 +3,7 @@ import { PlayerType } from './DirectionPalette';
 
 // Creamos un store para manejar el turno del jugador
 export const playerTurn = writable<PlayerType>(PlayerType.michi);
-export const defaultMainCount = 5;
+export const defaultMainCount = 30;
 export const mainCounter = writable(defaultMainCount);
 export const isPausedMainCounter = writable(false);
 export const isStopMainCounter = writable(false);

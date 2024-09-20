@@ -2,9 +2,6 @@
     import { DirectionPalette } from "../DirectionPalette";
 
     export let direction: DirectionPalette = DirectionPalette.left;
-    export let color1 = '';
-    export let color2 = '';
-    export let color3 = '';
 </script>
 
 <section 

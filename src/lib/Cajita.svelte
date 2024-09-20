@@ -1,7 +1,7 @@
 <script lang="ts">
     import { Sound } from "svelte-sound";
-    import miauSound from "../assets/sounds/miauTap.mp3";
-    import robotSound from "../assets/sounds/robotTap.mp3";
+    import miauSound from "@public/sounds/miauTap.mp3";
+    import robotSound from "@public/sounds/robotTap.mp3";
     import {PlayerType} from "../DirectionPalette";
     import { playerTurn, michiCounter, robotCounter, numbersWin } from '../Store';
 
@@ -47,6 +47,8 @@
     }
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <article class:selected={isSelected} on:click={meApretaste}>
     {#if image != ''}
         <img src={image} alt="hola">
